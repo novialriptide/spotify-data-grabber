@@ -88,7 +88,7 @@ def display_page(page_value):
         result = (
             track["artists"][0]["name"],
             track["name"],
-            f"{int(track['duration_ms'] / 3600)} min",
+            f"{int(track['duration_ms'] / (60 * 1000))} min",
             audio_analysis["track"]["tempo"],
             audio_analysis["track"]["key"],
         )
